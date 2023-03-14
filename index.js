@@ -2,20 +2,14 @@ function receivesAFunction(spy) {
   spy()
 }
 
-
 function returnsANamedFunction() {
-  return function () {
+  function myFunction() {
   }
+  return myFunction
 }
-
-var fn = returnsANamedFunction ()
-fn()
-
 
 function returnsAnAnonymousFunction() {
   return function () {
   }
 }
 
-var fn = returnsAnAnonymousFunction ()
-fn()
